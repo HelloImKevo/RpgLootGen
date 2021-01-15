@@ -1,2 +1,3 @@
-include ':app'
+include ':KtApp'
+include ':JavaApp'
 rootProject.name='RPGLootGen'
