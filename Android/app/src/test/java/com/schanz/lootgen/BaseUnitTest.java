@@ -33,7 +33,7 @@ import static org.mockito.ArgumentMatchers.anyString;
         TextUtils.class})
 public abstract class BaseUnitTest {
 
-    private MainApplication mApplication;
+    private MainApp mApplication;
 
     @Before
     public void setUp() {
@@ -49,10 +49,10 @@ public abstract class BaseUnitTest {
     @NonNull
     protected Application getApplication() {
         if (mApplication == null) {
-            mApplication = PowerMockito.mock(MainApplication.class);
+            mApplication = PowerMockito.mock(MainApp.class);
 
-            PowerMockito.mockStatic(MainApplication.class);
-            PowerMockito.when(MainApplication.getInstance()).thenReturn(mApplication);
+            PowerMockito.mockStatic(MainApp.class);
+            PowerMockito.when(MainApp.getInstance()).thenReturn(mApplication);
             PowerMockito.when(mApplication.getBaseContext()).thenReturn(mApplication);
             PowerMockito.when(mApplication.getApplicationContext()).thenReturn(mApplication);
         }
