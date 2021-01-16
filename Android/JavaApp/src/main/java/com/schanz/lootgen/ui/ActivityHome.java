@@ -1,5 +1,4 @@
-
-package com.schanz.lootgen;
+package com.schanz.lootgen.ui;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -9,6 +8,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.schanz.lootgen.MainApp;
+import com.schanz.lootgen.R;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;

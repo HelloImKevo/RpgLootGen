@@ -1,4 +1,4 @@
-package com.schanz.ktapp;
+package com.schanz.lootgen.ui;
 
 public interface IFragmentActionCallbacks {
     void onClickProceed(FragmentId fragmentId);

@@ -1,5 +1,4 @@
-
-package com.schanz.ktapp;
+package com.schanz.ktapp.ui;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -9,6 +8,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.schanz.ktapp.MainApp;
+import com.schanz.ktapp.R;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;

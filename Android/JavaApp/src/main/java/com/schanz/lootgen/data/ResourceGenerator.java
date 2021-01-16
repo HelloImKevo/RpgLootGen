@@ -1,5 +1,4 @@
-
-package com.schanz.lootgen;
+package com.schanz.lootgen.data;
 
 import java.util.Random;
 
@@ -8,6 +7,8 @@ import android.graphics.Color;
 import android.util.Log;
 
 import com.schanz.lootgen.Constants.CreationType;
+import com.schanz.lootgen.MainApp;
+import com.schanz.lootgen.R;
 
 public class ResourceGenerator {
 

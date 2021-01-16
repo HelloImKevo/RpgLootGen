@@ -1,4 +1,4 @@
-package com.schanz.lootgen;
+package com.schanz.ktapp.ui;
 
 import android.app.Activity;
 import android.content.Context;
@@ -16,6 +16,9 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.schanz.ktapp.R;
+import com.schanz.ktapp.data.ResourceGenerator;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;

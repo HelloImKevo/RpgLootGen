@@ -1,10 +1,12 @@
-package com.schanz.ktapp;
+package com.schanz.ktapp.data;
 
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.util.Log;
 
 import com.schanz.ktapp.Constants.CreationType;
+import com.schanz.ktapp.MainApp;
+import com.schanz.ktapp.R;
 
 import java.util.Random;
 

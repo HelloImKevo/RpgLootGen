@@ -1,4 +1,4 @@
-package com.schanz.ktapp;
+package com.schanz.ktapp.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -15,6 +15,11 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TableRow;
+
+import com.schanz.ktapp.data.Creation;
+import com.schanz.ktapp.MainApp;
+import com.schanz.ktapp.R;
+import com.schanz.ktapp.data.ResourceGenerator;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package com.schanz.ktapp;
+package com.schanz.ktapp.ui;
 
 public enum FragmentId {
     PREVIEW_CREATION,

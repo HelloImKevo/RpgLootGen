@@ -1,4 +1,4 @@
-package com.schanz.lootgen;
+package com.schanz.lootgen.ui;
 
 import java.util.Random;
 
@@ -17,6 +17,11 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TableRow;
+
+import com.schanz.lootgen.MainApp;
+import com.schanz.lootgen.R;
+import com.schanz.lootgen.data.Creation;
+import com.schanz.lootgen.data.ResourceGenerator;
 
 public class FragmentChooseAttributes extends FragmentBase implements OnFocusChangeListener,
         IActivityActionCallbacks {

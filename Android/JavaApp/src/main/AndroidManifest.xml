@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="com.schanz.lootgen.ActivitySplashScreen"
+            android:name="com.schanz.lootgen.ui.ActivitySplashScreen"
             android:screenOrientation="portrait">
 
             <intent-filter>
@@ -22,7 +22,7 @@
         </activity>
 
         <activity
-            android:name="com.schanz.lootgen.ActivityHome"
+            android:name="com.schanz.lootgen.ui.ActivityHome"
             android:screenOrientation="portrait" >
         </activity>
     </application>

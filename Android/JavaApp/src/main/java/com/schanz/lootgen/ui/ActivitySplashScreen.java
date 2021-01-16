@@ -1,4 +1,4 @@
-package com.schanz.lootgen;
+package com.schanz.lootgen.ui;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.View.OnTouchListener;
 import android.view.Window;
 import android.widget.LinearLayout;
+
+import com.schanz.lootgen.R;
 
 public class ActivitySplashScreen extends Activity implements OnTouchListener {
 

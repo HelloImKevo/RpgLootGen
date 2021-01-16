@@ -10,6 +10,7 @@ import android.os.Build;
 import android.preference.PreferenceManager;
 
 import com.schanz.lootgen.Constants.CreationType;
+import com.schanz.lootgen.data.Creation;
 
 public class MainApp extends Application {
 

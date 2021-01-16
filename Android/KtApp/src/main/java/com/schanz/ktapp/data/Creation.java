@@ -1,9 +1,8 @@
+package com.schanz.ktapp.data;
 
-package com.schanz.lootgen;
-
-import com.schanz.lootgen.Constants.CreationType;
-import com.schanz.lootgen.Constants.DamageType;
-import com.schanz.lootgen.Constants.RangeType;
+import com.schanz.ktapp.Constants.CreationType;
+import com.schanz.ktapp.Constants.DamageType;
+import com.schanz.ktapp.Constants.RangeType;
 
 public class Creation {
 

@@ -1,5 +1,4 @@
-
-package com.schanz.lootgen;
+package com.schanz.lootgen.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -13,6 +12,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+
+import com.schanz.lootgen.MainApp;
+import com.schanz.lootgen.R;
+import com.schanz.lootgen.data.Creation;
+import com.schanz.lootgen.data.ResourceGenerator;
 
 public class FragmentCreateStory extends FragmentBase implements IActivityActionCallbacks {
 

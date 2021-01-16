@@ -1,4 +1,4 @@
-package com.schanz.lootgen;
+package com.schanz.ktapp.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -9,6 +9,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.schanz.ktapp.data.Creation;
+import com.schanz.ktapp.MainApp;
+import com.schanz.ktapp.R;
+import com.schanz.ktapp.data.ResourceGenerator;
 
 public class FragmentPreviewCreation extends FragmentBase {
 

@@ -1,4 +1,4 @@
-package com.schanz.ktapp;
+package com.schanz.ktapp.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -12,6 +12,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+
+import com.schanz.ktapp.data.Creation;
+import com.schanz.ktapp.MainApp;
+import com.schanz.ktapp.R;
+import com.schanz.ktapp.data.ResourceGenerator;
 
 public class FragmentCreateStory extends FragmentBase implements IActivityActionCallbacks {
 

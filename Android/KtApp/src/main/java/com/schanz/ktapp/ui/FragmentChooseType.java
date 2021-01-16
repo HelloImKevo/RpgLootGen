@@ -1,5 +1,4 @@
-
-package com.schanz.lootgen;
+package com.schanz.ktapp.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,7 +10,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.schanz.lootgen.Constants.CreationType;
+import com.schanz.ktapp.Constants.CreationType;
+import com.schanz.ktapp.MainApp;
+import com.schanz.ktapp.R;
 
 public class FragmentChooseType extends FragmentBase implements IActivityActionCallbacks {
 

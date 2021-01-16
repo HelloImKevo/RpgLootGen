@@ -1,4 +1,4 @@
-package com.schanz.lootgen;
+package com.schanz.ktapp.ui;
 
 import android.app.AlertDialog;
 import android.graphics.Color;
