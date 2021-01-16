@@ -1,0 +1,119 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background" >
+
+    <LinearLayout
+        android:id="@+id/scroll_view_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/title_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/creation_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/creation_preview_title_none"
+                android:textColor="@color/primary_text"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_help"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_help"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/action_settings"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_unknown" />
+
+        <Button
+            android:id="@+id/Button01"
+            style="@style/Button.Blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/common_placeholder" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/preview_stat_box"
+            android:orientation="vertical"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@+id/stat_box_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Name"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/stat_box_rarity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Legendary"
+                android:textColor="@color/alizarin"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            
+            <TextView
+                android:id="@+id/stat_box_damage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="25 - 57 Damage"
+                android:textColor="@color/pomegranate"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_box_dps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(35.2 damage per second)"
+                android:textColor="@color/belize_hole"
+                android:textSize="14sp" />
+            
+            <TextView
+                android:id="@+id/stat_box_attribute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(35.2 damage per second)"
+                android:textColor="@color/rarity_green"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_box_story"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Story"
+                android:textColor="@color/rarity_yellow"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

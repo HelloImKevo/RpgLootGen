@@ -1,3 +1,356 @@
 <resources>
-    <string name="app_name">junk</string>
+    <string name="app_name">Loot Gen</string>
+
+    <!-- Drawer Menu -->
+    <string name="drawer_preview">Preview Creation</string>
+    <string name="drawer_type">Creation Type</string>
+    <string name="drawer_attributes">Pick Attributes</string>
+    <string name="drawer_story">Write the Story</string>
+    <string name="drawer_your_achievements">Your Achievements</string>
+    <string name="drawer_your_stats">Your Stats</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="drawer_dialog_help_title">What do I do?</string>
+    <string name="drawer_dialog_help_message">Select items in the drawer on the left to
+        navigate to the corresponding screen. First select a creation type. Then pick out
+        some attributes for your creation. You can preview your creation at any time
+        at the Creation Preview screen.</string>
+    <string name="common_proceed">Proceed!</string>
+
+    <!-- Common Strings -->
+    <string-array name="common_dialog_confirmations">
+        <item>Okay!</item>
+        <item>Got it!</item>
+        <item>Sure.</item>
+        <item>Yay!</item>
+        <item>Blue.</item>
+        <item>No, Yellooooow&#8230;!</item>
+    </string-array>
+    <string-array name="common_toast_messages">
+        <item>Bam!</item>
+        <item>Woot.</item>
+        <item>Success!</item>
+        <item>Huzzah!</item>
+        <item>Pew pew!</item>
+        <item>Winning!</item>
+        <item>Behold, magic!</item>
+        <item>You cast magic missiles.</item>
+        <item>Knowledge +1</item>
+    </string-array>
+
+    <string name="common_placeholder">Placeholder&#8230;</string>
+
+    <!-- Action Bar -->
+    <string name="action_example">Example action</string>
+    <string name="action_generate">Generate!</string>
+    <string name="action_save">Save</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_help">How to Use</string>
+
+    <!-- Creation Type Fragment -->
+    <string name="creation_type_title">What will you Create?</string>
+    <string name="creation_type_toast_hero">A noble choice!</string>
+    <string name="creation_type_toast_monster">Have something evil in mind?</string>
+    <string name="creation_type_toast_item">Time to get creative!</string>
+    <string name="creation_type_button_hero">Create a Hero!</string>
+    <string name="creation_type_button_monster">Create a Monster!</string>
+    <string name="creation_type_button_item">Create an Item!</string>
+
+    <!-- Pick Attributes Fragment -->
+    <string name="attributes_title">Pick attributes for your Creation</string>
+    <string name="attributes_dialog_help_title">Attributes&#8230; Wha&#8212;?</string>
+    <string name="attributes_dialog_help_message">Check the attributes you want added to your
+        creation, and input a range of values where appropriate. If you don\'t see something
+        you want, you can add custom attributes from the Custom Attributes screen!</string>
+    <string name="attributes_button_randomize">Randomize!</string>
+    <string name="attributes_column_attribute">Attribute</string>
+    <string name="attributes_column_min">Min</string>
+    <string name="attributes_column_max">Max</string>
+
+    <!-- Global Attributes -->
+    <string name="attr_vitality">Vitality</string>
+    <string name="attr_strength">Strength</string>
+    <string name="attr_intelligence">Intelligence</string>
+    <string name="attr_dexterity">Dexterity</string>
+    <string name="attr_rarity">Rarity</string>
+    <string name="attr_luck">Luck</string>
+    <string name="attr_ranged">Ranged</string>
+    <string name="attr_damage">Damage</string>
+    <string name="attr_health">Health</string>
+    <string name="attr_mana">Mana</string>
+    <string name="attr_speed">Speed</string>
+    <string name="attr_crit_chance">Critical Chance</string>
+    <string name="attr_value">Value</string>
+    <string name="attr_item_type">Item Type</string>
+
+    <string-array name="attr_item_types">
+        <item>Weapon</item>
+        <item>Armor</item>
+        <item>Food</item>
+        <item>Potion</item>
+    </string-array>
+    <string-array name="attr_default_rarities">
+        <item>Garbage</item>
+        <item>Trash</item>
+        <item>Common</item>
+        <item>Uncommon</item>
+        <item>Rare</item>
+        <item>Epic</item>
+        <item>Mythic</item>
+        <item>Legendary</item>
+        <item>Godly</item>
+    </string-array>
+    <string-array name="attr_default_currencies">
+        <item>Gold</item>
+        <item>Gil</item>
+        <item>Pounds</item>
+        <item>Euros</item>
+        <item>Unicorns</item>
+        <item>Leprechauns</item>
+        <item>Story Points</item>
+        <item>Nuggets</item>
+        <item>Talents</item>
+    </string-array>
+
+    <!-- Story -->
+    <string name="story_creation_name_title">Name your Creation</string>
+    <string name="story_creation_image_title">How will it be recognized?</string>
+
+    <!--
+    Random Name Generation
+    Heroes: Hero_Name + the + Modifier
+    Monsters: The + Monster_Name + Modifier
+    Items: Modifier + Item_Name + Item_Suffix
+    -->
+    <string-array name="name_modifiers">
+        <item>Stalwart</item>
+        <item>Uber</item>
+        <item>Strong</item>
+        <item>Fearful</item>
+        <item>Thunderous</item>
+        <item>Goliath</item>
+        <item>Glorious</item>
+        <item>Grand</item>
+        <item>Lowly</item>
+        <item>Filthy</item>
+        <item>Obnoxious</item>
+        <item>Brimstone</item>
+        <item>Timid</item>
+        <item>Lazy</item>
+        <item>Brutal</item>
+        <item>Wrathful</item>
+        <item>Loud</item>
+        <item>Quiet</item>
+        <item>Oafish</item>
+        <item>Clumsy</item>
+        <item>Iron Ox</item>
+        <item>Soaring Eagle</item>
+        <item>Tadpole</item>
+        <item>Thief</item>
+        <item>Deceptive</item>
+        <item>Demon</item>
+        <item>Mountain</item>
+        <item>Hammer</item>
+        <item>Brute</item>
+        <item>Fat</item>
+        <item>Pious</item>
+        <item>Zealous</item>
+        <item>Righteous</item>
+        <item>Monstrous</item>
+        <item>Butcher</item>
+        <item>Warrior</item>
+        <item>Wizard</item>
+        <item>Archer</item>
+        <item>Ranger</item>
+        <item>Assistant</item>
+        <item>Apprentice</item>
+        <item>Master</item>
+        <item>Novice</item>
+        <item>Adept</item>
+        <item>Holy</item>
+        <item>Evil</item>
+        <item>Devilish</item>
+        <item>Demonic</item>
+        <item>Paladin</item>
+        <item>Spellsword</item>
+        <item>Pawn</item>
+        <item>Knight</item>
+        <item>Tower</item>
+        <item>Gallant</item>
+        <item>Beautiful</item>
+        <item>Handsome</item>
+        <item>Hideous</item>
+        <item>Ugly</item>
+        <item>Vile</item>
+        <item>Traitorous</item>
+    </string-array>
+    <string-array name="name_items">
+        <item>Potion</item>
+        <item>Elixir</item>
+        <item>Scroll</item>
+        <item>Trinket</item>
+        <item>Rune</item>
+    </string-array>
+    <string-array name="name_heroes">
+        <item>Richter</item>
+        <item>Matilda</item>
+        <item>Roy</item>
+        <item>Philbert</item>
+        <item>Lidia</item>
+        <item>Clive</item>
+        <item>Jorg</item>
+        <item>Ned</item>
+        <item>Stephen</item>
+        <item>Carhana</item>
+        <item>Jamben</item>
+        <item>Malethyst</item>
+        <item>Uro</item>
+        <item>Varithax</item>
+        <item>Kur\'gaal</item>
+        <item>Vaaltir</item>
+        <item>Alinea</item>
+        <item>Tharidan</item>
+        <item>Cad</item>
+        <item>Caderyn</item>
+        <item>Ailon</item>
+        <item>Brynmor</item>
+        <item>Mordain</item>
+        <item>Nhyssa</item>
+        <item>Sabine</item>
+        <item>Sabille</item>
+        <item>Longtooth</item>
+        <item>Khaen</item>
+        <item>Grimfang</item>
+        <item>Grimsnarl</item>
+        <item>Snowsong</item>
+        <item>Kara</item>
+        <item>Kira</item>
+
+    </string-array>
+    <string-array name="name_monsters">
+        <item>Beast</item>
+        <item>Demon</item>
+        <item>Monster</item>
+        <item>Horror</item>
+        <item>Ghost</item>
+    </string-array>
+    <string-array name="item_name_suffixes">
+        <item>of the Songbird</item>
+        <item>of Heroes</item>
+        <item>of the Eagle</item>
+        <item>of the Wolverine</item>
+        <item>the Deadly</item>
+        <item>the Doombringer</item>
+        <item>the Noble</item>
+        <item>of Nobility</item>
+        <item>of Smashing</item>
+        <item>of Cleanliness</item>
+        <item>of Brutality</item>
+        <item>of the Marmot</item>
+        <item>the Ashbringer</item>
+        <item>the Deceptive</item>
+        <item>of the Boar</item>
+        <item>of the Wolf</item>
+        <item>of the Venomous</item>
+        <item>of Oak</item>
+        <item>of the Turtle</item>
+        <item>of Iron</item>
+        <item>of Gold</item>
+        <item>of Steel</item>
+        <item>of Demons</item>
+        <item>of Angels</item>
+        <item>of the Monkey</item>
+        <item>of the Ox</item>
+        <item>of Flame</item>
+        <item>of Frost</item>
+        <item>of Air</item>
+        <item>of the Vampire</item>
+        <item>of Fortitude</item>
+        <item>of Intelligence</item>
+        <item>of Dexterity</item>
+        <item>of Speed</item>
+        <item>of the King</item>
+        <item>of the Penguin</item>
+        <item>of Tides</item>
+        <item>of Manasteal</item>
+        <item>of Suns</item>
+        <item>of Moons</item>
+        <item>of Stars</item>
+        <item>of Rainbows</item>
+        <item>of the Horse</item>
+        <item>of the Hare</item>
+        <item>of the Forest</item>
+        <item>of the Plains</item>
+        <item>of the Mountain</item>
+        <item>of the Coven</item>
+        <item>of the Cult</item>
+        <item>of the Holy Order</item>
+        <item>of the King</item>
+        <item>of the Lords</item>
+        <item>of the Valorous</item>
+        <item>of the Traitorous</item>
+    </string-array>
+
+    <!-- Random Story: Nouns are injected to replace %1$s variable -->
+    <string-array name="story_nouns">
+        <item>Warrior</item>
+        <item>Wizard</item>
+        <item>Archer</item>
+        <item>Rogue</item>
+        <item>Cleric</item>
+        <item>Magical Weapon</item>
+        <item>Healthy Monkey</item>
+        <item>Grizzled Old Hermit</item>
+        <item>Airship</item>
+        <item>Great Lord Angrath</item>
+        <item>Wooden Sword</item>
+        <item>Tiny Being</item>
+        <item>Knight</item>
+        <item>Thief</item>
+        <item>Banana</item>
+        <item>Monster</item>
+        <item>Bandit</item>
+    </string-array>
+    <string-array name="story_beginnings">
+        <item>Once upon a time there was a %1$s.</item>
+        <item>A mysterious %1$s had travelled the world many times over.</item>
+        <item>There once lived a %1$s.</item>
+    </string-array>
+    <string-array name="story_middles">
+        <item>The %1$s visited a wise hermit living in a remote swamp.</item>
+        <item>While aboard the legendary ship, the USS %1$s, several pirates boarded
+            and demanded all of the gold be handed over!</item>
+        <item>One day, he mistakingly stole from the %1$s.</item>
+    </string-array>
+    <string-array name="story_endings">
+        <item>Finally, the evil %1$s met their untimely end.</item>
+        <item>After successfully slaying the %1$s, the villagers rejoiced at the
+            local tavern!</item>
+        <item>Now, he lives out his days cleaning the %1$s.</item>
+    </string-array>
+
+    <!-- Preview Creation -->
+    <string name="creation_preview_title_none">Your Creation doesn\'t exist yet!</string>
+    <string name="creation_preview_dialog_help_title">Why this no work?</string>
+    <string name="creation_preview_dialog_help_message">Before you can preview your creation
+        you need to pick a Creation Type at the very least. Any customizations you do to your
+        creation will be reflected here.</string>
+    <string name="fragment_preview_title">Your Creation so far</string>
+
+    <!-- Achievements -->
+    <string name="achievement_10hits_title">Randomized 10 Creations</string>
+    <string name="achievement_dialog_10hits_title">Your First Achievement!</string>
+    <string name="achievement_dialog_10hits_message">There\'s plenty more where that came from!
+        The rest of the achievements will be a little more difficult to get :)</string>
+
+    <string-array name="achievement_dialog_confirmations">
+        <item>Score!</item>
+        <item>I win.</item>
+        <item>Awesome.</item>
+        <item>What?</item>
+        <item>Banana.</item>
+        <item>Experience +1</item>
+        <item>Sweet Justice!</item>
+    </string-array>
+
 </resources>

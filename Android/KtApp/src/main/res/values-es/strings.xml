@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Loot Gen</string>
+
+    <!-- Action Bar -->
+    <string name="action_example">Ejemplo</string>
+    <string name="action_generate">\u0161Generar!</string>
+    <string name="action_settings">Configuracion</string>
+
+</resources>

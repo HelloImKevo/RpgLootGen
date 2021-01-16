@@ -1,4 +1,4 @@
-package com.schanz.lootgen;
+package com.schanz.ktapp;
 
 public class Constants {
     public enum CreationType {
