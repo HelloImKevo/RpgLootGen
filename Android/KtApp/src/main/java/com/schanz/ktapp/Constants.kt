@@ -1,21 +1,21 @@
-package com.schanz.ktapp;
+package com.schanz.ktapp
 
-public class Constants {
-    public enum CreationType {
+class Constants {
+    enum class CreationType {
         HERO,
         MONSTER,
         ITEM
     }
 
-    public enum DamageType {
+    enum class DamageType {
         SLASH, PIERCE, MAGIC
     }
 
-    public enum RangeType {
+    enum class RangeType {
         MELEE, RANGED
     }
 
-    public enum ItemType {
+    enum class ItemType {
         WEAPON, AMMO, SPELL, ARMOR, FOOD, POTION
     }
 }
