@@ -14,6 +14,7 @@ import com.schanz.lootgen.data.Creation;
 
 public class MainApp extends Application {
 
+    // Static methods and variables.
     private static MainApp sSingleton;
 
     private static final String STORED_PREFERENCE_USERNAME = "storedUsername";
@@ -23,60 +24,8 @@ public class MainApp extends Application {
 
     public static int sHitsRandom = 0;
 
-    private ArrayList<Creation> mCreations = new ArrayList<Creation>();
-
-    private Creation mCurrentCreation = new Creation();
-
     public static MainApp getInstance() {
         return sSingleton;
-    }
-
-    public Creation getCurrentCreation() {
-        return mCurrentCreation;
-    }
-
-    public void setCurrentCreation(Creation currentCreation) {
-        mCurrentCreation = currentCreation;
-    }
-
-    /**
-     * Sets the {@code CreationType} of the current global {@code Creation} object.
-     * @return The current object's {@code CreationType} or null..
-     */
-    public void setCurrentCreationType(CreationType creationType) {
-        mCurrentCreation.setCreationType(creationType);
-    }
-
-    /**
-     * Gets the {@code CreationType} of the current global {@code Creation} object.
-     * @return The current object's {@code CreationType} or null.
-     */
-    public CreationType getCurrentCreationType() {
-        return mCurrentCreation.getCreationType();
-    }
-
-    /**
-     * Checks if the given <b>drawable</b> resource name exists within this application.
-     * @param resourceName The name of the image resource.
-     * @return {@code true} if the resource exists, {@code false} if it does not.
-     */
-    public boolean doesResourceExist(String resourceName) {
-        int exists = getResources().getIdentifier(resourceName, "drawable", getPackageName());
-        return exists != 0 ? true : false;
-    }
-
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        sSingleton = this;
-    }
-
-    public ArrayList<Creation> getCreations() {
-        return mCreations;
-    }
-
-    public void setCreations(ArrayList<Creation> creations) {
-        mCreations = creations;
     }
 
     @TargetApi(Build.VERSION_CODES.GINGERBREAD)
@@ -128,5 +77,61 @@ public class MainApp extends Application {
         SharedPreferences preferences =
                 PreferenceManager.getDefaultSharedPreferences(sSingleton);
         return preferences.getString(STORED_PREFERENCE_PASSWORD, null);
+    }
+
+    // Non-static methods and variables.
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        sSingleton = this;
+    }
+
+    private ArrayList<Creation> mCreations = new ArrayList<Creation>();
+
+    private Creation mCurrentCreation = new Creation();
+
+    public Creation getCurrentCreation() {
+        return mCurrentCreation;
+    }
+
+    public void setCurrentCreation(Creation currentCreation) {
+        mCurrentCreation = currentCreation;
+    }
+
+    /**
+     * Sets the {@code CreationType} of the current global {@code Creation} object.
+     *
+     * @return The current object's {@code CreationType} or null..
+     */
+    public void setCurrentCreationType(CreationType creationType) {
+        mCurrentCreation.setCreationType(creationType);
+    }
+
+    /**
+     * Gets the {@code CreationType} of the current global {@code Creation} object.
+     *
+     * @return The current object's {@code CreationType} or null.
+     */
+    public CreationType getCurrentCreationType() {
+        return mCurrentCreation.getCreationType();
+    }
+
+    /**
+     * Checks if the given <b>drawable</b> resource name exists within this application.
+     *
+     * @param resourceName The name of the image resource.
+     * @return {@code true} if the resource exists, {@code false} if it does not.
+     */
+    public boolean doesResourceExist(String resourceName) {
+        int exists = getResources().getIdentifier(resourceName, "drawable", getPackageName());
+        return exists != 0 ? true : false;
+    }
+
+    public ArrayList<Creation> getCreations() {
+        return mCreations;
+    }
+
+    public void setCreations(ArrayList<Creation> creations) {
+        mCreations = creations;
     }
 }
