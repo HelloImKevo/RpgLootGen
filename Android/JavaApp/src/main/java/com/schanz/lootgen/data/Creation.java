@@ -4,16 +4,33 @@ import com.schanz.lootgen.Constants.CreationType;
 import com.schanz.lootgen.Constants.DamageType;
 import com.schanz.lootgen.Constants.RangeType;
 
+import androidx.annotation.DrawableRes;
+
 public class Creation {
 
     private CreationType mCreationType;
     private DamageType mDamageType;
     private RangeType mRangeType;
 
+    /**
+     * Name of the {@code Creation}. Example: "Bob".
+     */
     private String mName;
+
+    /**
+     * Rarity of the {@code Creation}. Examples: Legendary, Rare, Common.
+     */
     private String mRarity;
+
+    /**
+     * Background story (flavor text) for the {@code Creation}.
+     */
     private String mStory;
 
+    /**
+     * Drawable image resource that visually represents the {@code Creation}.
+     */
+    @DrawableRes
     private int mImageResource;
 
     private int mVitality;
@@ -72,11 +89,12 @@ public class Creation {
         mRarity = rarity;
     }
 
+    @DrawableRes
     public int getImageResource() {
         return mImageResource;
     }
 
-    public void setImageResource(int imageResource) {
+    public void setImageResource(@DrawableRes int imageResource) {
         mImageResource = imageResource;
     }
 
