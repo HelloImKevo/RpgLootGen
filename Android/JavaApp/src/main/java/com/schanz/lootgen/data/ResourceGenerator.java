@@ -75,10 +75,12 @@ public class ResourceGenerator {
     private String[] mNameModifiers;
     private String[] mItemNameSuffixes;
 
+    // Creation Names
     private String[] mNameHeroes;
     private String[] mNameItems;
     private String[] mNameMonsters;
 
+    // Creation Stories
     private String[] mStoryNouns;
     private String[] mStoryBeginnings;
     private String[] mStoryMiddles;
@@ -127,7 +129,7 @@ public class ResourceGenerator {
     }
 
     /**
-     * @return A random String currency from the default currencies array.
+     * @return A random achievement from the default achievements array.
      */
     public String getRandomAchievementResponse() {
         int randIndex = rand.nextInt(mAchievementResponses.length);
