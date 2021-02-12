@@ -1,6 +1,5 @@
 package com.schanz.lootgen.ui;
 
-import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -44,10 +43,6 @@ public class ActivityHome extends AppCompatActivity
                 (DrawerLayout)findViewById(R.id.drawer_layout));
 
         showFragmentChooseType(FragmentId.CHOOSE_TYPE);
-    }
-
-    public Context getContext() {
-        return this;
     }
 
     @Override
