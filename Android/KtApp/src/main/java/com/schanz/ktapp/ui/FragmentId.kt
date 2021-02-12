@@ -1,6 +1,6 @@
-package com.schanz.ktapp.ui;
+package com.schanz.ktapp.ui
 
-public enum FragmentId {
+enum class FragmentId {
     PREVIEW_CREATION,
     CHOOSE_TYPE,
     CHOOSE_ATTRIBUTES,
