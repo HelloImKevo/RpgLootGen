@@ -71,7 +71,7 @@ class ActivityHome : AppCompatActivity(),
         return super.onOptionsItemSelected(item)
     }
 
-    override fun onClickProceed(fragmentId: FragmentId) {
+    override fun onClickProceed(fragmentId: FragmentId?) {
         when (fragmentId) {
             FragmentId.CHOOSE_ATTRIBUTES -> showFragmentCreateStory(FragmentId.CREATE_STORY)
             FragmentId.CHOOSE_TYPE -> showFragmentChooseAttributes(FragmentId.CHOOSE_ATTRIBUTES)
